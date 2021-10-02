@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student Per Course</title>
+    <script type="text/javascript" src="checkstudentpercourse.js" ></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo5.png" alt="logo_img">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="relate-of-entities" class="relate-tr-c">
+        <div class="container">
+            <h1>Update Entities</h1>
+            <div class="row">
+              <div class="col-sm">
+                <form action="index.html" onsubmit="return confirm_form_studentpercourse()"   class="form-edit" id="studentpercourse-form">
+               <fieldset class="border p-1">
+                <legend class="w-auto col-form-label">Students Per Course</legend>
+                <label for="existingStudents" class="col-form-label" name="st-check" id="st-check">&nbsp;Select Student:</label>
+                <input list="existingStudents" name="existingStudents"  placeholder="Student" maxlength="20"
+                    size="27" required>
+                <datalist id="existingStudents">
+                  <option value="Hosea Jack">Java Part Time</option>
+                  <option value="Vera Fuselier">Java Full Time</option>
+                  <option value="Kacy Poplar">Java Part Time</option>
+                  <option value="Scottie Wallen">Java Full Time</option>
+                  <option value="Deeanna Soukoup">Python Part Time</option>
+                  <option value="Jesse Pammel">Python Part Time</option>
+                  <option value="Terrel Metzer">Javascript Full Time</option>
+                  <option value="Anelle Ziolkowski">Javascript Part Time</option>
+                  <option value="Carmen Caylor">Javascript Full Time</option>
+                  <option value="Alex Hoggan">Javascript Part Time</option>
+                   </datalist><br>
+                  
+              <label for="existingCourses"  class="col-form-label" >&nbsp;&nbsp; Select Course:</label>
+                    <input list="existingCourses" name="existingCourses" placeholder="Course" maxlength="20"
+                                    size="27" required>
+                        <datalist id="existingCourses">
+                           <option value="JAVA">Part Time</option>
+                           <option value="JAVA">Full Time</option>
+                           <option value="PYTHON">Part Time</option>
+                           <option value="JAVASCRIPT">Part Time</option>
+                           <option value="JAVASCRIPT">Full Time</option>
+                       </datalist><br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a  onclick="return writeToPageStudentPerCourse()"><button type="submit" class="btn btn-outline-primary">Update</button></a>
+                       
+                      
+                      </fieldset>
+                      </form>
+                    </div>
+               </div>
+            </div>
+      </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JQUERY/jquery.js"></script>
+</body>
+</html>

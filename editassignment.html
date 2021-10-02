@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo5.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<script type="text/javascript" src="checkcourse.js" ></script>
+<script type="text/javascript" src="checktrainer.js" ></script>
+<script type="text/javascript" src="checkstudent.js" ></script>
+<script type="text/javascript" src="checkassignment.js" ></script>
+    <title>Edit Assignment</title>
+</head>
+<body>
+    <section class="assignment-edit" id="assignment-edit">
+        <div class="container">
+          <h3>Edit Assignment</h3>
+          <div class="row">
+            <div class="col-sm">
+              <body>
+                <form action="index.html" onsubmit="return confirm_form_assignment()" class="form-assignment-edit" id="assignment-form">
+                    <p id="p1-a">Course/Assignment:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input list="course_assignment" name="course_assignment1" id="course_assignment1" placeholder="Input Course of the Assignment" size="24" maxlength="20"></p>
+                    <datalist id="course_assignment">
+                      <option value="JAVA">Part Time</option>
+                      <option value="JAVA">Full Time</option>
+                      <option value="PYTHON">Part Time</option>
+                      <option value="JAVASCRIPT">Part Time</option>
+                      <option value="JAVASCRIPT">Full Time</option>
+                  </datalist>
+                    <p id="p2-a">Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="title_assign" id="title_assign" placeholder="Input Title" size="24" maxlength="20">
+                    <p id="p3-a">Description: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="desc" id="desc" size="24" placeholder="Describe assignment" maxlength="20"></p>
+                    <p id="p4-a">Submission Date:
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="date" name="subd" id="subd" ></p>
+                    <input type="submit"  onclick="return writeToPageAssignment()" value="Update Assignment" id="assignment-button">
+                </form> 
+               
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="JQUERY/jquery.js"></script>
+</body>
+</html>

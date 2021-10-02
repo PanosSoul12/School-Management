@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Programming School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo5.png" alt="logo_img">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<script type="text/javascript" src="checkcourse.js" ></script>
+<script type="text/javascript" src="checktrainer.js" ></script>
+<script type="text/javascript" src="checkstudent.js" ></script>
+<script type="text/javascript" src="checkassignment.js" ></script>
+<script type="text/javascript" src="checktrainerpercourse.js" ></script>
+<script type="text/javascript" src="checkstudentpercourse.js" ></script>
+<script type="text/javascript" src="checkassignmentpercourse.js" ></script> 
+<script type="text/javascript" src="checkassignmentperstudentpercourse.js" ></script> 
+<script type="text/javascript" src="buttontop.js" ></script> 
+
+
+
+
+
+
+</head>
+<body>
+ <section class="menu-bar" id="menu-bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-custom">
+        <a class="navbar-brand" href="#home"><img src="images/logo5.png"
+            alt="CivilEngineers Logo / Credits:LogoDesign.net" class="logo" style="height: 50px;"></a>
+        <div class="container" id="nav-bar">
+        <a class="navbar-brand" href="#home">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Add
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#course">Course</a>
+                <a class="dropdown-item" href="#trainer">Trainer</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#student">Student</a>
+                <a class="dropdown-item" href="#assignment">Assignment</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#relate-of-entities">Relate Of Entities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#contact-us">Contact Us</a>
+              </li>
+          </ul>
+          
+        </div>
+    </div>
+      </nav>
+    </section>
+
+    
+      <section class="welcome" id="home">
+      <div class="container" id="welcome">
+        <h1>Welcome to our Private Coding School<br></h1>
+        <h2>Learn to Code with Us</h2>
+      </div>
+    </section>
+    <section class="about-us" id="about-us">
+        <div class="container">
+        <h1><u>About Us</u></h1>
+        <p>Everyone’s talking about coding, but where do you start? This path will give you an introduction to the world of code and basic concepts. By the end, you’ll know whether Data Science, Computer Science or Web Development is right for you.
+
+            To start this Skill Path, sign up to us.</p>
+            <hr>
+            <h3>
+                What will you be able to do?
+                Here are just a few things you’ll be able to do with this Career Path.
+            </h3><hr>
+            <div class="row">
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <h3><b>UNDERSTAND PROGRAMMING</b></h3>
+                    <p>Get an overview of computer science, web development, and data science, as well as popular languages like JavaScript and Python.</p>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <h3><b>WRITE BASIC CODE</b></h3>
+                    <p>Apply key programming concepts like variables and functions by writing your first lines of code</p>
+                </div>
+                <div class="col-xs-12 col-md-4 col-xl-4">
+                    <h3><b>FIND YOUR FUTURE CAREER</b></h3>
+                    <p>Determine your path after exploring different careers in tech and hearing from real-life web developers, data scientists, and more.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        
+        <section class="course" id="course">
+          <div class="container">
+            <h3>Add Course</h3>
+            <div class="row">
+              <div class="col-sm">
+               
+                  <form action="index.html" onsubmit="return confirm_form_course()" class="form-course" id="course-form">
+                      <p id="p1-c">Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="title" id="title" placeholder="Input title of the course" size="24" maxlength="20"></p>
+                      <p id="p2-c">Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input list="types-courses" name="type" placeholder="Choose Type" id="type" size="24" maxlength="20">
+                        <datalist id="types-courses">
+                            <option value="Part-Time">6 Months</option>
+                            <option value="Full Time">3 Months</option>
+                        </datalist></p>
+                    <p id="p3-c">Start Date: <input type="datetime-local" name="start-date" id="start-date"></p>
+                      <p id="p4-c">End Date:&nbsp;&nbsp;&nbsp;&nbsp;<input type="datetime-local" name="end-date" id="end-date"></p>
+                      <input type="submit"  onclick="return writeToPageCourse()" value="Save Course" id="course-button">
+                  </form> 
+                  <div class="col-sm">
+                    <fieldset class="border p-1">
+                        <legend class="w-auto col-form-label">Edit Course</legend>
+                        <form>
+                            <div class="form-group col-sm">
+                                <label for="existingCourses" class="col-form-label">Select Course:</label>
+                                <input list="existingCourses" name="existingCourses" placeholder="Course" maxlength="20"
+                                    size="28" required>
+                                <datalist id="existingCourses">
+                                    <option value="JAVA">Part Time</option>
+                                    <option value="JAVA">Full Time</option>
+                                    <option value="PYTHON">Part Time</option>
+                                    <option value="JAVASCRIPT">Part Time</option>
+                                    <option value="JAVASCRIPT">Full Time</option>
+                                </datalist>
+                            </div>
+                            <div class="form-group col-sm">
+                                <label id="btn-edit-course">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a  href="editcourse.html" target="_blank" style="color: wheat;">Edit</a>
+                                </label>
+                                
+                            </div>
+                        </form>
+                    </fieldset>                 
+
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+      
+      <section class="trainer" id="trainer">
+        <div class="container">
+          <h3>Add Trainer</h3>
+          <div class="row">
+            <div class="col-sm">
+              
+                <form action="index.html" onsubmit="return confirm_form_trainer()" class="form-trainer" id="trainer-form">
+                    <p id="p1-t">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname" id="fname" placeholder="Input First Name" size="24" maxlength="20"></p>
+                    <p id="p2-t">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lname" id="lname" placeholder="Input Last Name" size="24" maxlength="20">
+                      </p>
+                    <p id="p3-t">Subject: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="subject" id="subject" placeholder="Input Subject" size="24" maxlength="20"></p>
+                    <input type="submit"  onclick="return writeToPageTrainer()" value="Save Trainer" id="trainer-button">
+                </form> 
+                <div class="col-sm">
+                  <fieldset class="border p-1">
+                      <legend class="w-auto col-form-label">Edit Trainer</legend>
+                      <form>
+                          <div class="form-group col-sm">
+                              <label for="existingTrainers" class="col-form-label">Select Trainer:</label>
+                              <input list="existingTrainers" name="existingTrainers" placeholder="Trainer" maxlength="20"
+                                  size="28" required>
+                              <datalist id="existingTrainers">
+                                  <option value="Benjamin Ben">Java part-time</option>
+                                  <option value="Kenneth Lee">Java full-time</option>
+                                  <option value="Oscar Paul">Python</option>
+                                  <option value="Thomas William">Javascript part-time</option>
+                                  <option value="Nicholas Oliver">Javascript full-time</option>
+                              </datalist>
+                          </div>
+                          <div class="form-group col-sm">
+                              <label id="btn-edit-trainer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a  href="edittrainer.html" target="_blank" style="color: wheat;">Edit</a>
+                              </label>
+                              
+                          </div>
+                      </form>
+                  </fieldset>                 
+
+            </div>
+          </div>
+        </div>
+     </div>
+      </section>
+
+      <section class="student" id="student">
+        <div class="container">
+          <h3>Add Student</h3>
+          <div class="row">
+            <div class="col-sm">
+             
+                <form action="index.html" onsubmit="return confirm_form_student()" class="form-student" id="student-form">
+                    <p id="p1-s">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fname2" id="fname2" placeholder="Input First Name" size="24" maxlength="20"></p>
+                    <p id="p2-s">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lname2" id="lname2" placeholder="Input Last Name" size="24" maxlength="20">
+                    <p id="p3-s">Fees: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="fees" placeholder="Input Fees" id="fees" size="24" maxlength="20"></p>
+                  <p id="p4-s">Date Of Birth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; <input type="date" name="dob" id="dob" ></p>
+                    <input type="submit"  onclick="return writeToPageStudent()" value="Save Student" id="student-button">
+                </form> 
+                <div class="col-sm">
+                  <fieldset class="border p-1">
+                      <legend class="w-auto col-form-label">Edit Student</legend>
+                      <form>
+                          <div class="form-group col-sm">
+                              <label for="existingStudents" class="col-form-label">Select Student:</label>
+                              <input list="existingStudents" name="existingStudents" placeholder="Student" maxlength="20"
+                                  size="28" required>
+                              <datalist id="existingStudents">
+                                  <option value="Hosea Jack">Java Part Time</option>
+                                  <option value="Vera Fuselier">Java Full Time</option>
+                                  <option value="Kacy Poplar">Java Part Time</option>
+                                  <option value="Scottie Wallen">Java Full Time</option>
+                                  <option value="Deeanna Soukoup">Python Part Time</option>
+                                  <option value="Jesse Pammel">Python Part Time</option>
+                                  <option value="Terrel Metzer">Javascript Full Time</option>
+                                  <option value="Anelle Ziolkowski">Javascript Part Time</option>
+                                  <option value="Carmen Caylor">Javascript Full Time</option>
+                                  <option value="Alex Hoggan">Javascript Part Time</option>
+                              </datalist>
+                          </div>
+                          <div class="form-group col-sm">
+                              <label id="btn-edit-student">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a  href="editstudent.html" target="_blank" style="color: wheat;">Edit</a>
+                              </label>
+                              
+                          </div>
+                      </form>
+                  </fieldset>                 
+
+            </div>
+          </div>
+        </div>
+    </div>
+      </section>
+
+      <section class="assignment" id="assignment">
+        <div class="container">
+          <h3>Add Assignment</h3>
+          <div class="row">
+            <div class="col-sm">
+             
+                <form action="index.html" onsubmit="return confirm_form_assignment()" class="form-assignment" id="assignment-form">
+                    <p id="p1-a">Course/Assignment:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input list="course_assignment" name="course_assignment1" id="course_assignment1" placeholder="Input Course of the Assignment" size="24" maxlength="20"></p>
+                    <datalist id="course_assignment">
+                      <option value="JAVA">Part Time</option>
+                      <option value="JAVA">Full Time</option>
+                      <option value="PYTHON">Part Time</option>
+                      <option value="JAVASCRIPT">Part Time</option>
+                      <option value="JAVASCRIPT">Full Time</option>
+                  </datalist>
+                    <p id="p2-a">Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="title_assign" id="title_assign" placeholder="Input Title" size="24" maxlength="20">
+                    <p id="p3-a">Description: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" name="desc" id="desc" size="24" placeholder="Describe assignment" maxlength="20"></p>
+                    <p id="p4-a">Submission Date:
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <input type="date" name="subd" id="subd" ></p>
+                    <input type="submit"  onclick="return writeToPageAssignment()" value="Save Assignment" id="assignment-button">
+                </form> 
+                <div class="col-sm">
+                  <fieldset class="border p-1">
+                      <legend class="w-auto col-form-label">Edit Assignment</legend>
+                      <form>
+                          <div class="form-group col-sm">
+                              <label for="existingAssignments" class="col-form-label">Select Assignment:</label>
+                              <input list="existingAssignments" name="existingAssignments" placeholder="Assignment" maxlength="20"
+                                  size="28" required>
+                              <datalist id="existingAssignments">
+                                  <option value="Number Guessing Game">Java Part Time</option>
+                                  <option value="ATM Interface">Java Full Time</option>
+                                  <option value="Dice Rolling Simulator">Python Part Time</option>
+                                  <option value="Create a Clock">Javascript Full Time</option>
+                                  <option value="Create a Map">Javascript Part Time</option>
+                              </datalist>
+                          </div>
+                          <div class="form-group col-sm">
+                              <label id="btn-edit-assignment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a  href="editassignment.html" target="_blank" style="color: wheat;">Edit</a>
+                              </label>
+                              
+                          </div>
+                      </form>
+                  </fieldset>                 
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+
+      <section id="relate-of-entities" class="relate-tr-c">
+        <div class="container">
+          <h1>Relate Of Entities</h1>
+            <div class="row">
+              <div class="col-sm">
+                <form action="index.html" onsubmit="return confirm_form_trainerpercourse()"   class="form-edit" id="trainerpercourse-form">
+               <fieldset class="border p-1">
+                <legend class="w-auto col-form-label">Trainers Per Course</legend>
+                <label for="existingTrainers" class="col-form-label" name="tr-check" id="tr-check">&nbsp;Select Trainer:</label>
+                <input list="existingTrainers" name="existingTrainers"  placeholder="Trainer" maxlength="20"
+                    size="27" required>
+                <datalist id="existingTrainers">
+                    <option value="Benjamin Ben">Java part-time</option>
+                    <option value="Kenneth Lee">Java full-time</option>
+                    <option value="Oscar Paul">Python</option>
+                    <option value="Thomas William">Javascript part-time</option>
+                    <option value="Nicholas Oliver">Javascript full-time</option>
+                   </datalist><br>
+                  
+              <label for="existingCourses"  class="col-form-label" >&nbsp;&nbsp; Select Course:</label>
+                    <input list="existingCourses" name="existingCourses" placeholder="Course" maxlength="20"
+                                    size="27" required>
+                        <datalist id="existingCourses">
+                           <option value="JAVA">Part Time</option>
+                           <option value="JAVA">Full Time</option>
+                           <option value="PYTHON">Part Time</option>
+                           <option value="JAVASCRIPT">Part Time</option>
+                           <option value="JAVASCRIPT">Full Time</option>
+                       </datalist><br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a  onclick="return writeToPageTrainerPerCourse()"><button type="submit" class="btn btn-outline-primary">Add</button></a>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="edittrainerspercourse.html" target="_blank"><button type="button" class="btn btn-outline-primary">Edit</button></a>
+                      </fieldset>
+                      </form>
+                    </div>
+               </div>
+            </div>
+      </section>
+
+      <section id="relate-of-entities" class="relate-tr-c">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <form action="index.html" onsubmit="return confirm_form_studentpercourse()"   class="form-edit" id="studentpercourse-form">
+               <fieldset class="border p-1">
+                <legend class="w-auto col-form-label">Students Per Course</legend>
+                <label for="existingStudents" class="col-form-label" name="st-check" id="st-check">&nbsp;Select Student:</label>
+                <input list="existingStudents" name="existingStudents"  placeholder="Student" maxlength="20"
+                    size="27" required>
+                <datalist id="existingStudents">
+                  <option value="Hosea Jack">Java Part Time</option>
+                  <option value="Vera Fuselier">Java Full Time</option>
+                  <option value="Kacy Poplar">Java Part Time</option>
+                  <option value="Scottie Wallen">Java Full Time</option>
+                  <option value="Deeanna Soukoup">Python Part Time</option>
+                  <option value="Jesse Pammel">Python Part Time</option>
+                  <option value="Terrel Metzer">Javascript Full Time</option>
+                  <option value="Anelle Ziolkowski">Javascript Part Time</option>
+                  <option value="Carmen Caylor">Javascript Full Time</option>
+                  <option value="Alex Hoggan">Javascript Part Time</option>
+                   </datalist><br>
+                  
+              <label for="existingCourses"  class="col-form-label" >&nbsp;&nbsp; Select Course:</label>
+                    <input list="existingCourses" name="existingCourses" placeholder="Course" maxlength="20"
+                                    size="27" required>
+                        <datalist id="existingCourses">
+                           <option value="JAVA">Part Time</option>
+                           <option value="JAVA">Full Time</option>
+                           <option value="PYTHON">Part Time</option>
+                           <option value="JAVASCRIPT">Part Time</option>
+                           <option value="JAVASCRIPT">Full Time</option>
+                       </datalist><br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a  onclick="return writeToPageStudentPerCourse()"><button type="submit" class="btn btn-outline-primary">Add</button></a>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="editstudentspercourse.html" target="_blank"><button type="button" class="btn btn-outline-primary">Edit</button></a>
+                      </fieldset>
+                      </form>
+                    </div>
+               </div>
+            </div>
+      </section>
+
+      <section id="relate-of-entities" class="relate-tr-c">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <form action="index.html" onsubmit="return confirm_form_assignmentpercourse()"   class="form-edit" id="assignmentpercourse-form">
+               <fieldset class="border p-1">
+                <legend class="w-auto col-form-label">Assignments Per Course</legend>
+                <label for="existingAssignments" class="col-form-label" name="as-check" id="as-check">Select Assignment:</label>
+                <input list="existingAssignments" name="existingAssignments"  placeholder="Assignment" maxlength="20"
+                    size="27" required>
+                <datalist id="existingAssignments">
+                  <option value="Number Guessing Game">Java Part Time</option>
+                  <option value="ATM Interface">Java Full Time</option>
+                  <option value="Dice Rolling Simulator">Python Part Time</option>
+                  <option value="Create a Clock">Javascript Full Time</option>
+                  <option value="Create a Map">Javascript Part Time</option>
+                   </datalist><br>
+                  
+              <label for="existingCourses"  class="col-form-label" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Course:</label>
+                    <input list="existingCourses" name="existingCourses" placeholder="Course" maxlength="20"
+                                    size="27" required>
+                        <datalist id="existingCourses">
+                           <option value="JAVA">Part Time</option>
+                           <option value="JAVA">Full Time</option>
+                           <option value="PYTHON">Part Time</option>
+                           <option value="JAVASCRIPT">Part Time</option>
+                           <option value="JAVASCRIPT">Full Time</option>
+                       </datalist><br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a  onclick="return writeToPageAssignmentPerCourse()"><button type="submit" class="btn btn-outline-primary">Add</button></a>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="editassignmentspercourse.html" target="_blank"><button type="button" class="btn btn-outline-primary">Edit</button></a>
+                      </fieldset>
+                      </form>
+                    </div>
+               </div>
+            </div>
+      </section>
+
+      <section id="relate-of-entities" class="relate-tr-c">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <form action="index.html" onsubmit="return confirm_form_assignmentperstudentpercourse()"   class="form-edit" id="assignmentperstudentpercourse-form">
+               <fieldset class="border p-1">
+                <legend class="w-auto col-form-label">Assignments Per Student Per Course</legend>
+                <label for="existingAssignments" class="col-form-label" name="as-check" id="as-check">Select Assignment:</label>
+                <input list="existingAssignments" name="existingAssignments"  placeholder="Assignment" maxlength="20"
+                    size="27" required>
+                <datalist id="existingAssignments">
+                  <option value="Number Guessing Game">Java Part Time</option>
+                  <option value="ATM Interface">Java Full Time</option>
+                  <option value="Dice Rolling Simulator">Python Part Time</option>
+                  <option value="Create a Clock">Javascript Full Time</option>
+                  <option value="Create a Map">Javascript Part Time</option>
+                   </datalist><br>
+                   <label for="existingStudents" class="col-form-label" name="st-check" id="st-check">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Student:</label>
+                <input list="existingStudents" name="existingStudents"  placeholder="Student" maxlength="20"
+                    size="27" required>
+                <datalist id="existingStudents">
+                  <option value="Hosea Jack">Java Part Time</option>
+                  <option value="Vera Fuselier">Java Full Time</option>
+                  <option value="Kacy Poplar">Java Part Time</option>
+                  <option value="Scottie Wallen">Java Full Time</option>
+                  <option value="Deeanna Soukoup">Python Part Time</option>
+                  <option value="Jesse Pammel">Python Part Time</option>
+                  <option value="Terrel Metzer">Javascript Full Time</option>
+                  <option value="Anelle Ziolkowski">Javascript Part Time</option>
+                  <option value="Carmen Caylor">Javascript Full Time</option>
+                  <option value="Alex Hoggan">Javascript Part Time</option>
+                   </datalist><br>
+              <label for="existingCourses"  class="col-form-label" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Course:</label>
+                    <input list="existingCourses" name="existingCourses" placeholder="Course" maxlength="20"
+                                    size="27" required>
+                        <datalist id="existingCourses">
+                           <option value="JAVA">Part Time</option>
+                           <option value="JAVA">Full Time</option>
+                           <option value="PYTHON">Part Time</option>
+                           <option value="JAVASCRIPT">Part Time</option>
+                           <option value="JAVASCRIPT">Full Time</option>
+                       </datalist><br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a  onclick="return writeToPageAssignmentPerStudentPerCourse()"><button type="submit" class="btn btn-outline-primary">Add</button></a>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <a href="editassignmentsperSTperC.html" target="_blank"><button type="button" class="btn btn-outline-primary">Edit</button></a>
+                      </fieldset>
+                      </form>
+                    </div>
+               </div>
+            </div>
+      </section><hr>
+      
+     <section id="contact-us">
+       <div class="container">
+        <h1>Contact Us</h1><hr>
+        <div>
+          <u><h2>Our Location</h2></u>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100621.22936695188!2d23.66829933952863!3d37.990816432734675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1f067043f1%3A0x2736354576668ddd!2zzpHOuM6uzr3OsQ!5e0!3m2!1sel!2sgr!4v1621771966853!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        coding@school.com : <img src="images/mailicon.png" alt="mail_logo" style="height: 30px;">
+      <br>
+        210 21 02 102 : <img src="images/phone.png" alt="phone_logo" style="height: 30px;">
+        <br>
+        Athens : <img src="images/location.jpg" alt="location_logo" style="height: 30px;">
+        <br>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </div>
+
+     </section>
+      
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JQUERY/jquery.js"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</html>

@@ -1,0 +1,431 @@
+
+.bg-custom{
+    border-bottom:3px solid rgb(202, 202, 228);
+    font-family: 'Kaushan Script', cursive;    
+}
+.welcome h1{
+   
+    font-size: 80px;
+    font-weight: 10px;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px rgb(105, 105, 247);
+    color: white;
+    text-align: center;
+}
+.welcome h2{
+    margin: 100px 100px 100px 100px;
+    font-size: 40px;
+    font-weight: 10px;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px rgb(105, 105, 247);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+.welcome{
+    padding-top: 100px;
+    background:linear-gradient(rgba(252, 216, 216, 0.123),#c4f3eeda),url(images/school2_img.jpg) ;
+    background-size: 100% 100%;
+    background-position:center ;
+    
+}
+#about-us{
+    margin-top: 10px;
+    background: rgb(255, 255, 255);
+  
+}
+#about-us h1{
+    font-size: 100px;
+    font-weight: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px rgb(105, 105, 247);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#about-us p{
+    font-size: 30px;
+    font-weight: 10px;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px rgb(105, 105, 247);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#about-us h3{
+    font-size: 30px;
+    font-weight: 10px;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px rgb(105, 105, 247);
+    color: rgb(110, 52, 52);
+    text-align: center;
+}
+.course{
+    margin-top: 200px;
+    background: black;
+    font-family: 'Kaushan Script', cursive;
+    color: wheat;
+    font-size: 20px;
+    padding: 60px;
+    
+}
+.course h3{
+    text-align: center;
+    font-size: 40px;
+}
+.form-course{
+    text-align: center;
+    padding: 20px;
+}
+#course-button {
+    transition-duration: 0.9s;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#course-button:hover {
+    color: wheat;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+  }
+  #btn-edit-course{
+    transition-duration: 0.9s;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btn-edit-course:hover{
+    color: white;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+}
+.trainer{
+    margin-top: 200px;
+    background: black;
+    font-family: 'Kaushan Script', cursive;
+    color: wheat;
+    font-size: 20px;
+    padding: 60px;
+    
+}
+.trainer h3{
+    text-align: center;
+    font-size: 40px;
+}
+.form-trainer{
+    text-align: center;
+    padding: 20px;
+}
+#trainer-button {
+    transition-duration: 0.9s;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#trainer-button:hover {
+    color: wheat;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+  }
+  #btn-edit-trainer{
+    transition-duration: 0.9s;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btn-edit-trainer:hover{
+    color: white;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+}
+.student{
+    margin-top: 200px;
+    background: black;
+    font-family: 'Kaushan Script', cursive;
+    color: wheat;
+    font-size: 20px;
+    padding: 60px;
+ 
+}
+.student h3{
+    text-align: center;
+    font-size: 40px;
+}
+.form-student{
+    text-align: center;
+    padding: 20px;
+}
+#student-button {
+    transition-duration: 0.9s;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#student-button:hover {
+    color: wheat;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+  }
+  #btn-edit-student{
+    transition-duration: 0.9s;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btn-edit-student:hover{
+    color: white;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+}
+.assignment{
+    margin-top: 200px;
+    background: black;
+    font-family: 'Kaushan Script', cursive;
+    color: wheat;
+    font-size: 20px;
+    padding: 60px;
+   
+}
+.assignment h3{
+    text-align: center;
+    font-size: 40px;
+}
+.form-assignment{
+    text-align: center;
+    padding: 20px;
+}
+#assignment-button {
+    transition-duration: 0.9s;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#assignment-button:hover {
+    color: wheat;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+  }
+  #btn-edit-assignment{
+    transition-duration: 0.9s;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#btn-edit-assignment:hover{
+    color: white;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+}
+
+
+.course-edit{
+   
+    background:linear-gradient(rgba(252, 216, 216, 0.123),#c4f3eeda),url(images/edit_img.jpg) ;
+    font-family: 'Kaushan Script', cursive;
+    background-size: 100% 100%;
+    background-position:center ;
+    height: 100vh;
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    padding: 60px;
+    
+}
+.course-edit h3{
+    text-align: center;
+    font-size: 40px;
+}
+.form-course-edit{
+    text-align: center;
+    padding: 20px;
+}
+#course-button {
+    transition-duration: 0.9s;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#course-button:hover {
+    color: wheat;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+  }
+  .trainer-edit{
+    background:linear-gradient(rgba(252, 216, 216, 0.123),#c4f3eeda),url(images/edit_img.jpg) ;
+    font-family: 'Kaushan Script', cursive;
+    background-size: 100% 100%;
+    background-position:center ;
+    height: 100vh;
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    padding: 60px;
+    
+}
+.trainer-edit h3{
+    text-align: center;
+    font-size: 40px;
+}
+.form-trainer-edit{
+    text-align: center;
+    padding: 20px;
+}
+#trainer-button {
+    transition-duration: 0.9s;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#trainer-button:hover {
+    color: wheat;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+  }
+
+  .student-edit{
+    background:linear-gradient(rgba(252, 216, 216, 0.123),#c4f3eeda),url(images/edit_img.jpg) ;
+    font-family: 'Kaushan Script', cursive;
+    background-size: 100% 100%;
+    background-position:center ;
+    height: 100vh;
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    padding: 60px;
+    
+}
+.student-edit h3{
+    text-align: center;
+    font-size: 40px;
+}
+.form-student-edit{
+    text-align: center;
+    padding: 20px;
+}
+#student-button {
+    transition-duration: 0.9s;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#student-button:hover {
+    color: wheat;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+  }
+
+  .assignment-edit{
+    background:linear-gradient(rgba(252, 216, 216, 0.123),#c4f3eeda),url(images/edit_img.jpg) ;
+    font-family: 'Kaushan Script', cursive;
+    background-size: 100% 100%;
+    background-position:center ;
+    height: 100vh;
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    padding: 60px;
+   
+}
+.assignment-edit h3{
+    text-align: center;
+    font-size: 40px;
+}
+.form-assignment-edit{
+    text-align: center;
+    padding: 20px;
+}
+#assignment-button {
+    transition-duration: 0.9s;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#assignment-button:hover {
+    color: wheat;
+    box-shadow: inset 200px 0 0 0 black;
+    border: 2px solid wheat;
+
+  }
+#relate-of-entities{
+    margin-top: 80px;
+    background:linear-gradient(rgba(252, 216, 216, 0.123),#c4f3eeda),url(images/relate.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position:center ;
+}
+#relate-of-entities h1{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.form-edit{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid rgb(159, 255, 242);
+}
+.form-edit legend{
+    text-align: left;
+}
+#contact-us h1{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#contact-us h2{
+    font-family: 'Kaushan Script', cursive;
+}
+
+#myBtn {
+   
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: rgb(112, 250, 204); 
+    color: rgb(248, 231, 231); 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+
+
+
